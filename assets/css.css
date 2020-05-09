@@ -1,0 +1,40 @@
+body{
+    
+    align-content: center;
+    
+    
+}
+
+
+.search{
+    
+    font-size: larger;
+    text-align: center;
+    
+    width: 100%;
+    
+    
+    
+}
+
+.search_form{
+    align-content: center;
+    height: 60%;
+    block-size: 100%;
+    
+    
+    
+}
+
+.search_results{
+    grid-template-rows: 25% 25% 25% 25%;
+    align-content: center;
+    height: 100%;
+    margin-left: 30%;
+    
+}
+.buttons{
+    display: flex;
+    
+    
+}

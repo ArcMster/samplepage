@@ -1,0 +1,37 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css.css' %}" type="text/css">
+<body background = "{% static 'images/wall.jpg' %}"> 
+    
+    <div class="search">
+        Search and get rewarded
+        <br>
+        <br>
+        <div class="search_form">
+            <form action="search">
+                <input type="text" placeholder="Enter a keyword">
+                <input type="submit" value="GO">
+            </form>
+        </div>
+    </div>
+    <div class="search_results">
+        {% for i in audios %}
+        <div class="text">
+            Word to search is {{i.audio_id}}
+        </div>
+        <div class="audio">
+            <audio controls>
+                <source src="{{ i.audio_file.url }}" >
+            </audio>
+        </div>
+        <br>
+
+        <div class="buttons">
+            <input type="button" value="Match found">
+            <input type="button" value="No match">
+            <br>
+            <br>
+        </div>
+    
+        {% endfor %}
+    </div>
+</body>

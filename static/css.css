@@ -1,0 +1,36 @@
+body{
+    background-color: blue;
+    grid-template-rows: 30% 70%;
+    
+    
+}
+
+
+.search{
+    position: relative;
+    font-size: larger;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+    block-size: 50%;
+    
+    
+}
+
+.search_form{
+    position: relative;
+    align-content: center;
+    height: 60%;
+    block-size: 100%;
+    
+    
+    
+}
+
+.search_results{
+    grid-template-rows: 4;
+    align-content: center;
+    height: 100%;
+    margin-left: 30%;
+    
+}
